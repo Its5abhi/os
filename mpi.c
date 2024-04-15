@@ -80,3 +80,6 @@ int main(int argc, char** argv) {
  }
  MPI_Finalize();
  return 0; }
+
+mpicc hello_mpi.c -o hello_mpi
+mpiexec -n 4 ./hello_mpi
